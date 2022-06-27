@@ -1,2 +1,2 @@
 # clarity-parser
-Clarity parser definition
+Clarity parser definition for [Instaparse](https://github.com/Engelberg/instaparse).
