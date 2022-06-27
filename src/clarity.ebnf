@@ -1,4 +1,4 @@
-S = <ws?> (!ws toplevel <ws>)*  (* really require ws at end??? *)
+S = <ws?> (!ws toplevel <ws>)*
 toplevel = form
 <form> = list | record | atom
 list = <LPAR> <ws?> (form (<ws> form)* <ws?>)? <RPAR>
