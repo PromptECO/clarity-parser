@@ -14,14 +14,12 @@ principal = "'" STANDARD_PRINCIPAL (&DOT identifier | !DOT )
 identifier =  '.' CONTRACT_NAME (&DOT field | !DOT ) 
 field = '.' #'[a-zA-Z0-9\\-]{1,128}'
 <operator> = #'[\-!\?\+<>=/\*]'
-<terminator> = #'[\s\)\}\]]'
-
-ws = #'([\s]+|;;[^\n$]*[\n]?)+'
-comment = #';;[^\n$]*[\n]?'
 
 <CLARITY_NAME> = #'[A-Za-z0-9_\-!\?\+<>=/\*]+'
 <STANDARD_PRINCIPAL> = #'[0-9A-Z]{28,41}'
 <CONTRACT_NAME> = #'[a-zA-Z]([a-zA-Z0-9]|[-_]){0,39}'
+
+ws = #'([\s]+|;;[^\n$]*[\n]?)+'
 
 LPAR = '('
 RPAR = ')'
